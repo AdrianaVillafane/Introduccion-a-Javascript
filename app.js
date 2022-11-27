@@ -93,12 +93,21 @@ console.log(`Su conversión es: ${convMillas} millas.`);
 //Area de un triangulo
 //Crear un programa que pida al usuario ingresar el valor de la base y el valor de la altura de un triangulo, calcular su área y mostrarlo en un mensaje.
 
+let base = Number(prompt('Ingrese la base de su triángulo'));
+let altura = Number(prompt('Ingrese la altura de su triángulo'));
+let area = (base * altura) / 2;
 
+console.log(`El Área del triángulo es: ${area}`);
 
 
 //Perímetro de un rectángulo
 //Crear un programa que pida al usuario ingresar el valor de la altura y el valor del ancho de un rectángulo, calcular su perímetro y mostrarlo en un mensaje.
 
+let alto = Number (prompt('Ingrese el alto del rectángulo'));
+let ancho = Number (prompt('Ingrese el ancho del rectángulo'));
+let perimetro = ( 2 * alto) + ( 2 * ancho);
+
+console.log(`El perimetro de su rectángulo es: ${perimetro}`);
 
 
 
@@ -106,23 +115,42 @@ console.log(`Su conversión es: ${convMillas} millas.`);
 //Porcentaje
 //Crear un programa que pida al usuario ingresar un número, y luego el porcentaje que se desea obtener del mismo. Devolver un mensaje muestre el porcentaje de dicho número.
 
+let numeroUno = Number (prompt('Ingrese un número'));
+let numeroDos = Number (prompt('Igrese el porcentaje que desea saber'));
+let porcentaje = numeroUno * numeroDos / 100;
 
+console.log(`Su porcentaje es:${porcentaje}`);
 
 
 
 //tiempo de viaje
 //Crear un programa que pida al usuario la distancia de su recorrido y mostrar en un mensaje cuánto tiempo tardaría en completar el recorrido en distintos medios de transporte, definiendo de antemano distintas velocidades para distintos medios de transporte (p. ej.: a pie: 5 km/hora, bici 10km/hora, etc.).
 
+let velocidadCaminando = 5; 
+let velocidadBici = 10;
+let velocidadAuto = 60;
+let distancia = Number (prompt('Ingrese la distancia a recorrer'));
 
+let tiempoCaminando = distancia * 1 / 5;
+let tiempoBici = distancia * 1 / 10;
+let tiempoAuto = distancia * 1 / 60;
 
+console.log(`Tiempo estimado caminando es: ${tiempoCaminando}hs, en bici es: ${tiempoBici}hs, y en auto es: ${tiempoAuto}hs.`);
 
 
 
 //Duración del vuelo
 //Crear un programa que pida al usuario ingresar, por separado, 3 destinos de las escalas de un vuelo, y la duración de cada uno de ellos. Al final debe mostrar un mensaje que liste todas las escalas con su duración y la duración total del vuelo.
 
+let destinoUno = prompt('Ingrese el destino');
+let duracionEscalaUno = Number (prompt('Ingrese tiempo estimado'));
+let destinoDos = prompt('Ingrese el siguiente destino');
+let duracionEscalaDos = Number (prompt('Ingrese tiempo estimado'));
+let destinoTres = prompt('Ingrese el último destino');
+let duracionEscalaTres = Number (prompt('Ingrese tiempo estimado'));
+let tiempoTotal = duracionEscalaUno + duracionEscalaDos + duracionEscalaTres;
 
-
+console.log(`Escala en ${destinoUno}, tiempo aproximado:${duracionEscalaUno}hs, escala en ${destinoDos}, tiempo aproximado:${duracionEscalaDos}hs, escala en ${destinoTres}, tiempo aproximado:${duracionEscalaTres}hs. Tiempo total aproximado ${tiempoTotal}hs.`);
 
 
 
